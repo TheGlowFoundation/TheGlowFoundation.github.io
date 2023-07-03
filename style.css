@@ -7,29 +7,29 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav#nav-bar {
     display: flex;
-    font-size: 115%;
+    font-size: 110%;
     position: sticky;
-    box-shadow: .2px .1px 3px 3px;
+    box-shadow: .2px .2px 3px 3px;
     background: #ffeaff;
     outline-width: 100%;
     max-width: 100%;
-}
-
-nav {
-    list-style-type: none;
+    direction: ltr;
 }
 
 nav a {
     text-decoration: none;
     float: none;
-    padding: 5px;
-    border-radius: 30%;
+    padding: 10px;
+    border-radius: 40px;
 }
 
 nav a:hover {
-    color: blue;
     background-color: wheat;
     cursor: pointer;
 }
@@ -40,8 +40,8 @@ nav a:hover {
 }
 
 button {
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
     border: none;
     margin: 0;
     border-radius: 30%;
@@ -56,7 +56,8 @@ button img {
 
 h1 {
     color: brown;
-    box-shadow: .3px .3px 4px 4px;
+    box-shadow: .4px .5px 5px #c95464;
+    background: #d0576836;
 }
 
 h2 {
@@ -76,25 +77,35 @@ img {
 .column {
   flex: 1;
   padding: 0;
-  margin: 0;
+  margin: 1%;
+  border-collapse: collapse;
 }
 
 #col-1 {
-    padding: 5px;
-    margin: 1px;
+    padding: 2%;
+    margin: 0.5%;
     text-align: left;
     background: wheat;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 10%;
 }
 
 #col-2 {
-    text-align: left;
-    margin: 1px;
-    padding: 5px;
+    text-align: center;
+    margin: 0.5%;
+    padding: 2%;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 10%;
     background: whitesmoke;
+}
+
+#col-3 {
+    text-align: left;
+    margin: 0.5%;
+    padding: 2%;
+    justify-content: center;
+    border-radius: 10%;
+    background: wheat;
 }
 
 p {
@@ -103,4 +114,77 @@ p {
 
 .active {
     color: red;
+}
+.inpage-nav p {
+    box-shadow: .3px .3px 3px cyan;
+    text-decoration: underline;
+    background: white;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.inpage-nav a{
+    display: block;
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.inpage-nav a:hover {
+    box-shadow: .3px .3px 3px cyan;
+}
+
+#cont-h6 {
+    padding: 3%;
+    margin: auto;
+    text-align: left;
+    background: floralwhite;
+    color: #799f99;
+}
+
+.contacts {
+    padding: 1%;
+}
+
+.contacts div {
+    border-radius: 10px;
+    background: wheat;
+    color: #005555;
+}
+
+.cont-body {
+    background: #a6dddd60;
+}
+
+#page-name {
+    width: 20%;
+    height: auto;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#foot {
+    position: sticky;
+    width: 100%;
+    height: auto; /* Adjust this value to set the desired footer height */
+    background-color: #cccccc;
+    color: #ffffff;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    bottom: 0;
+}
+
+.social-footer a {
+    align-items: center;
+    align-content: space-between;
+    align-self: auto;
+    text-align: center;
+}
+
+.social-footer a img {
+    width: 20%;
+    height: auto;
 }

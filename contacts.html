@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <title>The Glow Foundation</title>
 </head>
-<body>
+<body class="cont-body">
   <header>
-    <nav id="nav-bar">
-          <button id="nav-btn1" onclick="closeNav()"><b>Hide</b></button>           
+    <nav id="nav-bar"> 
           <a href="./index.html">Home</a>           
           <a href="./about.html">About</a>           
           <a href="./features.html">Features</a>
           <a href="./contacts.html" class="active">Contact</a>
     </nav>
-    <h1 id="nav-btn" onclick="openNav()">The Glow Foundation</h1>
+    <h1 id="nav-btn" onclick="openNav()" ondblclick="closeNav()">The Glow Foundation</h1>
   </header>
     <main>
          <h2>
              by Stinger Developers
          </h2>
+         <h2 id="page-name"><a href="./index.html">&#8592<small><small><small>Back</small></small></small></a></h2>
+         
+         <h5 id="cont-h6">
+             Thank you for visiting our website, if you have any issue or concern you would like us to know...Or any inquiry, kindly contact us below...
+         </h5>
+         
+         <div class="contacts">
+             <div class="email1">
+                 <p>Email us at <a href="mailto:info.stingerdevelopers@gmail.com">info.stingerdevelopers@gmail.com</a> for any inquiries</p>
+             </div>
+             <div class="email2">
+                <p>You can also email us through <a href="mailto:stingerdeveloperske@gmail.com">stingerdeveloperske@gmail.com</a> for any recommendations on improving our services</p> 
+             </div>
+             <div class="whatsapp">
+                 <p>If you prefer Whatsapp, we got you covered. Just <a href="whatsapp://send?phone=+254100627577">click here</a> to direct message us</p>
+             </div>
+             <div class="social-media">
+                 <p>We recommend you <a href="">click here</a> to follow our social media accounts for any updates and information...and to join our community to interact with others like me and you</p>
+             </div>    
+         </div>
     </main>
-  <script src="script.js"></script>  
+  <script src="script.js"></script> 
+  <footer id="foot" >
+      <p><b>The Glow Foundation &copy 2023</b></p>
+      <div class="social-footer">
+        <a href="fb://page/lazaroodira" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="whatsapp://send?phone=+254100627577" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info.stingerdevelopers@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+  </footer> 
 </body>
 </html>
