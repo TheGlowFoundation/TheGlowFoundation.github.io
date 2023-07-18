@@ -1,0 +1,881 @@
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   right: 0;
+   left: 0;
+   width: 100%;
+}
+
+.gen-padd{
+   padding: 10px 10px;
+}
+
+.gen-marg{
+   margin: 5px;
+}
+
+.normal{
+   font-size: 14px;
+   font-weight: 600;
+   background-color: #088178;
+   border-radius: 20px;
+   padding: 15px 30px;
+   color: #fff;
+   outline: none;
+   cursor: pointer;
+   border-radius: 4px;
+   border: none;
+   transition: 0.2s;
+   
+}
+
+/* BACK TO TOP BUTTON */
+#myBtn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 3px;
+  cursor: pointer;
+  display: none;
+  font-size: 14px;
+}
+
+
+
+
+
+
+/* RESPONSIVE TO MOBILES*/
+
+@media(max-width:477px){
+  #logo{
+   height: 7vh;
+   width: auto;
+   }
+
+
+   /* homepage styling for mobile */
+
+   #header{
+      position: sticky;
+      margin-bottom: 0;
+   }
+   
+   #close{
+      display: block;
+      padding-bottom: 20px;
+   }
+
+   #bar{
+      font-size: 20px;
+   }
+
+
+   #header #navbar{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      position: relative;
+      margin-bottom: 0;
+      position: sticky;
+   }
+
+   #header #navbar #nav{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0px;
+      height: 100vh;
+      width: 150px;
+      background-color: #E3E6F3;
+      box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+      transition: 0.6s ease;
+      padding: 20px 10px 15px 10px;
+      z-index: 9999;
+      display: none;
+   }
+
+   #header #navbar #nav a{
+      padding-bottom: 20px;
+      position: relative;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      transition: 0.3s ease;
+      display: block;
+   }
+
+   #header #navbar #nav a:hover, #header #navbar #nav a.active{
+      color: #088178;
+   }
+
+   #header #navbar #nav a.active{
+      padding-bottom: 20px;
+   }
+  
+   /* #header #navbar #nav a.active::after, #header #navbar #nav a:hover::after{
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: #088178;
+      position: absolute;
+      bottom: -4px;
+       left: 20px;
+   } */
+
+   #header #navbar span{
+      padding: 15px 10px 15px 5px;
+      direction: rtl;
+      position: absolute;
+      right: 45px;
+   }
+
+   #header #navbar span a button{
+      background: transparent;
+      border: 1px solid #088178;
+      border-radius: 10%; 
+      text-decoration: none;
+      color: #384370;
+      font-style: bold;
+   }
+     
+   #header #navbar span a button:hover{
+      background: #088178;
+      border: none;
+   }
+
+   #header #navbar #logo{
+      width: auto;
+      height: 7vh;
+   }
+
+   #navbar{
+      background-color: #a0a0a09b;
+   }
+
+   #bar{
+      position: absolute;
+      right: 15px;
+      top: 15px;
+   }
+
+   /* hero */
+
+   #hero{
+      height: 60vh;
+      background: #ff2a15bd;
+      margin-top: 0;
+      padding: 0 20px;
+      right: 0;
+      background-position: 50%;
+      background-size: cover;
+     display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background-image: url('https://images.pexels.com/photos/6000001/pexels-photo-6000001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+      font-weight: bold;
+    }
+
+    #hero h4{
+       padding-bottom: 15px;
+    }
+
+    #hero h1{
+       color: #088178;
+    }
+
+    #hero button{
+      background-image: url('images/button.png');
+      opacity: 1;
+      background-color: transparent;
+      color: #088178;
+      border: 0;
+      padding: 10px 20px 10px 15px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    
+    
+    #youtube{
+       right: 0;
+       width: 100vw;
+       height: auto;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+
+   /* newsletter */
+
+   #newsletter{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-position: 20% 30%;
+      background-color: #041e42;
+      padding: 10px;
+    }  
+
+   #newsletter h4{
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+   }
+
+   #newsletter p{
+      font-size: 14px;
+      font-weight: 600;
+      color: #818ea0;
+   }   
+
+   #newsletter p span{
+      color: #ffbd27;
+   }
+   
+   #newsletter input{
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    #newsletter button{
+      background-color: #088178;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+   #newsletter .form{
+      display: flex;
+      width: 100%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+   }
+
+   footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background: #d5ffdf;
+   }
+
+   footer .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+   }
+
+   footer .logo{
+      margin-bottom: 30px;
+   }
+
+   footer h4{
+      font-size: 26px;
+      padding-bottom: 10px;
+   }
+
+   footer p{
+      font-size: 13px;
+      margin: 0 0 8px 0;
+   }
+
+   footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+   }
+
+   footer .col .follow {
+      margin-top: 10px;
+   }
+
+   footer .col .follow i{
+      color: #465b52;
+      padding: 0 34px;
+      margin: 0 24px;
+      cursor: pointer;
+      font-weight: bold;
+      justify-content: space-between;
+   }
+
+   footer .col .follow i:hover, footer a:hover{
+      color: #088178;
+   }
+
+   footer .copyright{
+      width: 100%;
+      text-align: center;
+   }
+
+
+
+   /* sign in page */
+
+
+   .submit a button{
+      position: absolute;
+      right: 0;
+      margin: 15px 10px;
+      word-wrap: normal;
+      font-size: 800;
+      font-style: bold;
+      text-decoration: none;
+      color: #fff;
+   }
+
+   .submit a button:hover{
+      background: transparent;
+      border: 1px solid #088178;
+      color: #088178;
+   }
+
+   .sign-btn{
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+   }
+
+   #btn{
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+   }
+
+   .sign-btn #g-btn{
+      background: #ffc755a4;
+   }
+
+   .sign-btn #g-btn:hover{
+      background: transparent;
+      color: #ffc755a4;
+      border: 1px solid #ffc755a4;
+   }
+
+   .sign-btn #f-btn{
+      background: #aafff4;
+   }
+
+   .sign-btn #f-btn:hover{
+      background: transparent;
+      color: #aafff4;
+      border: 1px solid #aafff4;
+   }
+
+   .sign-btn #t-btn{
+      background: #80c1ff;
+   }
+
+   .sign-btn #t-btn:hover{
+      background: transparent;
+      color: #80c1ff;
+      border: 1px solid #80c1ff;
+   }
+
+   #r-btn{
+      color: #434343;
+   }
+
+   #r-btn:hover{
+      background: #fff;
+      border: 1px solid #393939;
+      color: #737373f0;
+   }
+
+   .sign-btn button{
+      width: 95vw;
+      border-radius: 20px 20px;
+      border: none;
+   }
+
+   h4{
+      text-align: center;
+   }
+   
+   h1 button{
+      height: 5vh;
+      margin: ;
+   }
+
+   .email-prompt{
+      align-items: center;
+      justify-content: center;
+   }
+
+   .email-prompt h3{
+      text-align: left;
+      padding-left: 5px;
+      color: #454d27;  
+   }
+
+   .email-prompt .form{
+      display: flex;
+      width: 100%;
+   }
+
+   .email-prompt #email{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #088178;
+      border-right: none;
+   }
+
+   .email-prompt .normal1{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: #088178;
+      color: #fff;
+      white-space: nowrap;
+      border-radius: 4px;
+      border: none;
+      width: 30vw;
+   }
+
+   footer h5{
+      position: sticky;
+      align-items: center;
+      text-align: center;
+      bottom: 0;
+   }
+
+   h1{
+      font: bold;
+   }
+   
+    
+}
+
+
+
+
+
+@media(min-width:478px){
+   #logo, #header #navbar #logo{
+   height: 13vw;
+   width: auto;
+   flex-shrink: 0;
+   margin-right: 50px;
+   }
+   
+   #close{
+      display: none;
+   }
+
+   #bar{
+      display: none;
+   }
+   
+   #header{
+      position: sticky;
+      margin-bottom: 0;
+      background-color: #e8e8e8;
+      display: flex;
+   }
+   
+   #header #navbar{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+   }
+   
+   #header #navbar #nav{
+      display: flex;
+      flex-grow: 1;
+      flex: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      transition: 0.3s;
+   }
+   
+   #header #navbar #nav a{
+      text-decoration: none;
+      padding: 30px;
+      text-align: center;
+      justify-content: center;
+      color: #041717;
+      margin-right: 10px;
+   }
+   
+   #header #navbar #nav a:hover, #header #navbar #nav a.active{
+      color: #088178;
+   }
+   
+   #header #navbar span{
+      justify-content: flex-end;
+      margin-right: 10px;
+   }
+   
+   #header #navbar span button{
+      font-size: 14px;
+      font-weight: 600;
+      background-color: #088178;
+      border-radius: 20px;
+      padding: 10px;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+      transition: 0.2s;
+      margin-left: 20px;
+   }
+   
+
+   
+   /* hero */
+
+   #hero{
+      height: 60vw;
+      background: #ff2a15bd;
+      margin-top: 0;
+      padding: 0 25px;
+      right: 0;
+      background-position: 70%;
+      background-size: cover;
+     display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background-image: url('images/hero.jpg');
+    }
+
+    #hero h4{
+       padding-bottom: 15px;
+       font-size: 24px;
+    }
+    
+    #hero h2{
+       font-size: 30px;
+       padding-top: 0;
+       padding-bottom: 0;
+    }
+
+    #hero h1{
+       color: #088178;
+       font-size: 34px;
+       padding-top: 0;
+    }
+
+    #hero button{
+      background-image: url('');
+      background-color: transparent;
+      color: #088178;
+      border: 0;
+      padding: 10px 20px 10px 15px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    
+     #youtube{
+       right: 0;
+       width: 100vw;
+       height: auto;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+
+   /* newsletter */
+
+   #newsletter{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-position: 20% 30%;
+      background-color: #041e42;
+      padding: 10px;
+    } 
+    
+    #newsletter .newstext{
+       width: 60%;
+    } 
+
+   #newsletter h4{
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+   }
+
+   #newsletter p{
+      font-size: 14px;
+      font-weight: 600;
+      color: #818ea0;
+   }   
+
+   #newsletter p span{
+      color: #ffbd27;
+   }
+   
+   #newsletter input{
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    #newsletter button{
+      background-color: #088178;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+   #newsletter .form{
+      display: flex;
+      width: 40%;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+   }
+
+   footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background: #d5ffdf;
+   }
+
+   footer .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+   }
+
+   footer .logo{
+      margin-bottom: 30px;
+   }
+
+   footer h4{
+      font-size: 26px;
+      padding-bottom: 10px;
+   }
+
+   footer p{
+      font-size: 13px;
+      margin: 0 0 8px 0;
+   }
+
+   footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+   }
+
+   footer .col .follow {
+      margin-top: 10px;
+   }
+
+   footer .col .follow i{
+      color: #465b52;
+      padding: 0 34px;
+      margin: 0 24px;
+      cursor: pointer;
+      font-weight: bold;
+      justify-content: space-between;
+   }
+
+   footer .col .follow i:hover, footer a:hover{
+      color: #088178;
+   }
+
+   footer .copyright{
+      width: 100%;
+      text-align: center;
+   }
+
+
+
+   /* sign in page */
+
+
+   .submit a button{
+      position: absolute;
+      right: 0;
+      margin: 15px 10px;
+      word-wrap: normal;
+      font-size: 800;
+      font-style: bold;
+      text-decoration: none;
+      color: #fff;
+   }
+
+   .submit a button:hover{
+      background: transparent;
+      border: 1px solid #088178;
+      color: #088178;
+   }
+
+   .sign-btn{
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+   }
+
+   #btn{
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+   }
+
+   .sign-btn #g-btn{
+      background: #ffc755a4;
+   }
+
+   .sign-btn #g-btn:hover{
+      background: transparent;
+      color: #ffc755a4;
+      border: 1px solid #ffc755a4;
+   }
+
+   .sign-btn #f-btn{
+      background: #aafff4;
+   }
+
+   .sign-btn #f-btn:hover{
+      background: transparent;
+      color: #aafff4;
+      border: 1px solid #aafff4;
+   }
+
+   .sign-btn #t-btn{
+      background: #80c1ff;
+   }
+
+   .sign-btn #t-btn:hover{
+      background: transparent;
+      color: #80c1ff;
+      border: 1px solid #80c1ff;
+   }
+
+   #r-btn{
+      color: #434343;
+   }
+
+   #r-btn:hover{
+      background: #fff;
+      border: 1px solid #393939;
+      color: #737373f0;
+   }
+
+   .sign-btn button{
+      width: 95vw;
+      border-radius: 20px 20px;
+      border: none;
+   }
+
+   h4{
+      text-align: center;
+   }
+   
+   h1 button{
+      height: 5vh;
+      margin: ;
+   }
+
+   .email-prompt{
+      align-items: center;
+      justify-content: center;
+   }
+
+   .email-prompt h3{
+      text-align: left;
+      padding-left: 5px;
+      color: #454d27;  
+   }
+
+   .email-prompt .form{
+      display: flex;
+      width: 100%;
+   }
+
+   .email-prompt #email{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #088178;
+      border-right: none;
+   }
+
+   .email-prompt .normal1{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: #088178;
+      color: #fff;
+      white-space: nowrap;
+      border-radius: 4px;
+      border: none;
+      width: 30vw;
+   }
+
+   footer h5{
+      position: sticky;
+      align-items: center;
+      text-align: center;
+      bottom: 0;
+   }
+
+   h1{
+      font: bold;
+   }
+   
+    
+}
+
+
+
+    
+}
