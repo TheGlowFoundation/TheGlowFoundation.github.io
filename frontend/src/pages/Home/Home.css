@@ -1,0 +1,22 @@
+.Home {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    margin: 0;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    height: 50vh;
+    background-image: url("../assets/icon_named.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    clip: rect(0, 0, 100vh, 100vw);
+    align-items: center;
+    text-align: center;
+}
+
+md-outlined-button {
+    border: 0.2rem;
+}
