@@ -1,0 +1,21 @@
+
+
+*, html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0.3rem;
+}
+
+.navbar 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
