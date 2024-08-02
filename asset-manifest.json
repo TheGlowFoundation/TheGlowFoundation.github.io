@@ -1,11 +1,13 @@
 {
   "files": {
     "index.html": "/index.html",
-    "index.js": "/js/index.js",
-    "styles.css": "/css/styles.css"
+    "index.js": "/assets/js/index.js",
+    "/assets/js/index.js": "/assets/js/index.js",
+    "/assets/css/style.js": "/assets/css/styles.css",
+    "styles.css": "/assets/css/styles.css"
   },
   "entrypoints": [
-    "/css/styles.css",
-    "/js/index.js"
+    "assets/css/styles.css",
+    "assets/js/index.js"
   ]
 }
