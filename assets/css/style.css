@@ -44,9 +44,19 @@ body
   color: white;
 }
 
-.navbar .nav-list .navlinks a
+.navbar .nav-list li.navlinks a
 {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+.navbar .nav-icons
+{
+  font-size: 1.1rem;
+}
+
+.navbar .nav-icons a
+{
+  text-decoration: none;
 }
