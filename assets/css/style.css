@@ -2,20 +2,50 @@
 
 *, html
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body 
 {
-    margin: 0;
-    padding: 0.3rem;
+  margin: 0;
+  padding: 0.3rem;
 }
 
 .navbar 
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3rem;
+  align-items: center;
+  align-self: center;
+  background-color: chocolate;
+}
+
+.navbar .logo 
+{
+  align-content: center;
+  background-color: inherit;
+}
+
+.navbar .logo img
+{
+  width: inherit;
+  height: inherit;
+  padding: 0.3rem;
+}
+
+.navbar nav-list
+{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: teal;
+}
+
+.navbar .nav-list .navlinks a
+{
+  text-decoration: none;
+  font-size: 1.5rem;
 }
